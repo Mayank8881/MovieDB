@@ -10,12 +10,12 @@ import DarkMode from '../DarkMode';
 function Header() {
   return (
     <>
-    <div className='flex justify-between p-2 border-b-[4px]'>
+    <div className='flex justify-between p-2'>
         <div className='flex justify-between items-center gap-4'>
             <Image className='h-20 w-20 rounded-full 'src={logo}/>
         <div className='flex gap-5 ms-12 items-center'>
             <Link href='/'><span className='hidden sm:block hover:text-orange-600'>HOME</span><FaHome className='sm:hidden'/></Link>
-            <Link href='../About'><span className='hidden sm:block hover:text-orange-600'>ABOUT</span><FcAbout  className='sm:hidden'/></Link>
+            <Link href='/About'><span className='hidden sm:block hover:text-orange-600'>ABOUT</span><FcAbout  className='sm:hidden'/></Link>
         </div>
             
         </div>
