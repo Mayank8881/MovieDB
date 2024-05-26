@@ -3,9 +3,13 @@ import React from 'react'
 import Navbar from './Navbar'
 export default function NavItems() {
   return (
-    <div className='flex bg-orange-200 dark:bg-gray-600 gap-10 justify-center h-16 items-center text-2xl mt-3'>
+    <div className='flex bg-orange-200 dark:bg-gray-600  h-16 items-center text-2xl mt-3'>
+      <div className='ml-4 flex gap-10 '>
         <Navbar title='Trending' param='fetchTrending'/>
-        <Navbar title='Top Rated' param='fetchTopRated' />
+        <Navbar title='TopRated' param='fetchTopRated' />
+        <Navbar title='UpComing' param='fetchUpcoming'/>
+        </div>
     </div>
+
   )
 }

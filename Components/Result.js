@@ -1,14 +1,12 @@
+import Card from '@/app/Card'
 import React from 'react'
 
 export default function Result({results}) {
   return (
-    <div>
-        {
+    <div className='sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto py-4'>
+    {
         results.map((result)=>(
-            <div key={result.id}>
-                <h3>{result.original_title}</h3>
-                <h2>{result.adult}</h2>
-            </div>
+            <Card key={result.id} result={result}/>
         ))
     }
     </div>

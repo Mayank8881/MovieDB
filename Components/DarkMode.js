@@ -15,12 +15,12 @@ export default function DarkMode() {
     <div>
         {mounted && currentTheme === 'dark' ? (<MdLightMode 
             onClick={()=> setTheme('light')}
-            className='hover:text-orange-600 text-xl cursor-pointer'
+            className='hover:text-orange-600 text-xl cursor-pointer h-4 w-4'
             />
         ):
         (<MdDarkMode 
             onClick={()=> setTheme('dark')}
-            className='hover:text-orange-600 text-xl cursor-pointer'
+            className='hover:text-orange-600 text-xl cursor-pointer h-4 w-4'
             />
         )
         }
