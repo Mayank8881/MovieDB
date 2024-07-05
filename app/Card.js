@@ -7,7 +7,7 @@ import { FcLikePlaceholder } from "react-icons/fc";
 export default function Card({result}) {
   return (
     <div className=' rounded-lg   m-2 overflow-hidden hover:scale-105 '>
-        <Link href={`1/movie/${result.id}`}>
+        <Link href={`/movie/${result.id}`}>
             <Image src={`https://image.tmdb.org/t/p/original/${
                  result.poster_path
             }`}

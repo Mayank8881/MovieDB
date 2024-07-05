@@ -6,6 +6,7 @@ import Navbar from "@/Components/Navbar";
 import NavItems from "@/Components/NavItems";
 import Footer from "@/Components/Home/Footer"
 import Welcome from "@/Components/Welcome";
+import SearchBox from "@/Components/SearchBox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <Header/>
+          <SearchBox/>
+          <div className="h-[5px] bg-slate-50"></div>
           {children}
           {/* <NavItems/> */}
           {/* <Footer/> */}

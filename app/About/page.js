@@ -4,7 +4,7 @@ import React from 'react'
 export default function page() {
   return (
     <>
-    <div className='h-1 bg-slate-50'></div>
+    <div className=''></div>
     <div className='m-20'>
       <h1 className='text-3xl font-medium mb-5'>About</h1>
       <p className='mb-3'>

@@ -29,7 +29,7 @@ export default async function Home({ searchParams }) {
   const results = data.results;
   console.log(results)
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-hidden h-auto'>
       <NavItems/>
       <Result results={results} />
     </div>
